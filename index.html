@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bookshelf Apps</title>
+</head>
+
+<body>
+  <header class="atas">
+    <img src="images/4344873.png" alt="Logo" height="70px">
+    <h1>Rak Buku</h1>
+  </header>
+
+  <main>
+    <section class="input_section">
+      <h2>Input Buku Baru</h2>
+    <form id="inputBook">
+      <div class="input">
+        <label for="title">Judul</label>
+        <input id="title" type="text" name="title" placeholder="Judul tanpa terjemahan.." required>
+      </div>
+      <div class="input">
+        <label for="author">Penulis</label>
+        <input id="author" type="text" name="author" placeholder="Tulis salah satu nama saja.." required>
+      </div>
+      <div class="input">
+        <label for="year">Tahun</label>
+        <input id="year" type="number"  name="year" placeholder="contoh: 2019" required>
+      </div>
+      <div class="input_inline">
+        <label for="inputBookIsComplete">Centang bila sudah selesai baca</label>
+        <input id="inputBookIsComplete" type="checkbox">
+      </div>
+      <button id="bookSubmit" type="submit">Input Buku</button>
+    </form>
+    </section>
+
+    <section class="search_section">
+      <h2>Cari Buku</h2>
+      <form id="cariBuku">
+        <label for="judulBuku">Judul</label>
+        <input id="judulBuku" type="text" placeholder="Cari Judul..">
+        <button id="searchSubmit" type="submit">Cari</button>
+      </form>
+    </section>
+    
+    <section class="book_shelf">
+      <h2>Belum selesai dibaca</h2>
+      <div id="bukublmselesai" class="book_list">
+      </div>
+    </section>
+
+    <section class="book_shelf">
+      <h2>Selesai dibaca</h2>
+      <div id="bukuselesai" class="book_list">
+      </div>
+    </section>
+  </main>
+
+<script src="main.js"></script>   
+</body>
+</html>
